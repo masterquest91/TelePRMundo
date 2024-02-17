@@ -1,5 +1,5 @@
 # TelePRMundo
-Un canal de Roku basico para ver TeleMu de Puerto Rico fácilmente. 
+Un canal de Roku basico para ver TelePRMundo fácilmente. 
 
 Éste proyecto fue inspirado por el Crash Course que se consigue aqui:
 https://github.com/learnroku/crash-course/tree/master
