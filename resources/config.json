@@ -1,0 +1,33 @@
+{
+  "host": "https://raw.githubusercontent.com/masterquest91/TelePRMundo/main/feeds/",
+  "categories": [
+    {
+      "title": "Drama",
+      "feed_url": "/drama.json"
+    },
+    {
+      "id": "D123",
+      "title": "Apple test direct",
+      "description": "Lorem Ipsum",
+      "thumbnail": "/images/thumbnail-drama1.jpg",
+      "url":"https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8",
+      "streamformat":"hls"
+    },
+    {
+      "id": "D123",
+      "title": "Apple test direct",
+      "description": "Lorem Ipsum",
+      "thumbnail": "/images/thumbnail-drama1.jpg",
+      "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8",
+      "streamformat":"hls"
+    },
+    {
+      "title": "Error Test",
+      "feed_url": "/broken_path"
+    },
+    {
+      "title": "Bad Data",
+      "feed_url": "/bad_data.json"
+    }
+  ]
+}
