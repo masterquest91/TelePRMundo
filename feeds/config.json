@@ -1,0 +1,13 @@
+{
+  "host": "https://raw.githubusercontent.com/masterquest91/TelePRMundo/main/",
+  "categories": [
+    {
+      "title": "Telemundo Puerto Rico",
+      "feed_url": "/feeds/pr.json"
+    },
+    {
+      "title": "Canal 13 TeleOro",
+      "feed_url": "/feeds/pr.json"
+    }
+  ]
+}
