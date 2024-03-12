@@ -1,0 +1,30 @@
+{
+    "title": "Elije canal",
+    "description": "Canales de PR",
+    "items": [
+        {
+            "id": "TM",
+            "title": "Telemundo PR Canal 2",
+            "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
+            "thumbnail": "https://media.telemundopr.com/2022/09/Telemundo-PR-1-1.png",
+            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8",
+            "streamformat":"hls"
+        },
+        {
+            "id": "WAPA",
+            "title": "WAPA PR Canal 4",
+            "description": "WAPA",
+            "thumbnail": "https://bloximages.newyork1.vip.townnews.com/wapa.tv/content/tncms/custom/image/2bee9ed0-6752-11ed-8535-7fba1705bfef.png",
+            "url":"https://live.field59.com/wapa/ngrp:wapa1_all/playlist.m3u8",
+            "streamformat":"hls"
+        },
+        {
+            "id": "WIPR",
+            "title": "WIPR Canal 6",
+            "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
+            "thumbnail": "https://wipr.pr/wp-content/uploads/2022/04/wipr-logo-purple.png",
+            "url":"https://ott3.streann.com/loadbalancer/services/public/channels-secure/6273ffeae4b037870081ff51/playlist.m3u8",
+            "streamformat":"hls"
+        }
+    ]
+}

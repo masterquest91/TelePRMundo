@@ -1,6 +1,3 @@
-
-
-
 sub init()
   m.title = m.top.FindNode("title")
   m.description = m.top.FindNode("description")

@@ -3,6 +3,13 @@ sub init()
 	m.header = m.top.FindNode("header")
 end sub
 
+' set proper focus to rowList in case if return from Details Screen
+sub onVisibleChange()
+  if m.top.visible = true then
+    m.content_grid.setFocus(true)
+  end if
+end sub
+
 sub onFeedChanged(obj)
 	feed = obj.getData()
   ? "ON Feed changed! ", feed
@@ -29,6 +36,8 @@ sub showpostergrid(content)
 	m.content_grid.setFocus(true)
 end sub
 
+
 function updateConfig(params)
 	m.host = params.config.host
 end function
+

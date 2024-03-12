@@ -1,17 +1,26 @@
 function init()
 	? "[home_scene] init"
+
+
 	m.category_screen = m.top.findNode("category_screen")
 	m.content_screen = m.top.findNode("content_screen")
 	m.details_screen = m.top.findNode("details_screen")
 	m.error_dialog = m.top.findNode("error_dialog")
 	m.videoplayer = m.top.findNode("videoplayer")
 	initializeVideoPlayer()
-
+	
 	m.category_screen.observeField("category_selected", "onCategorySelected")
 	m.content_screen.observeField("content_selected", "onContentSelected")
 	m.details_screen.observeField("play_button_pressed", "onPlayButtonPressed")
 
+	' just load Telemundo
+	   loadFeed("https://raw.githubusercontent.com/masterquest91/TelePRMundo/main/feeds/pr.json")
+	   m.videoplayer.control = "play"
+	' end auto load
+
+
 	m.category_screen.setFocus(true)
+
 	loadConfig()
 end function
 
@@ -29,7 +38,7 @@ sub loadConfig()
     m.config_task = createObject("roSGNode", "load_config_task")
     m.config_task.observeField("filedata", "onConfigResponse")
     m.config_task.observeField("error", "onConfigError")
-    m.config_task.filepath = "resources/config.json"
+    m.config_task.filepath = "source/config.json"
     m.config_task.control="RUN"
 end sub
 
@@ -115,7 +124,7 @@ end sub
 sub closeVideo()
 	m.videoplayer.control = "stop"
 	m.videoplayer.visible=false
-	m.details_screen.visible=true
+	m.category_screen.visible=true
 end sub
 
 sub showErrorDialog(message)

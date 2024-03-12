@@ -1,0 +1,9 @@
+{
+  "host": "https://raw.githubusercontent.com/masterquest91/TelePRMundo/main/",
+  "categories": [
+    {
+      "title": "Canales de Puerto Rico",
+      "feed_url": "/feeds/pr.json"
+    }
+  ]
+}
