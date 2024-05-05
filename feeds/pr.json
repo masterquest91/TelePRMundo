@@ -26,5 +26,13 @@
             "url":"https://ott3.streann.com/loadbalancer/services/public/channels-secure/6273ffeae4b037870081ff51/playlist.m3u8",
             "streamformat":"hls"
         }
+                {
+            "id": "BOXEO",
+            "title": "BOXEO",
+            "description": "BOXEO",
+            "thumbnail": "https://anthonyjoshua.com/cdn/shop/articles/AJ_Fight_Insta_1.png",
+            "url":"https://www.newcdn.lol/images/perereca88/index.m3u8",
+            "streamformat":"hls"
+        }
     ]
 }
