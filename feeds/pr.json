@@ -1,7 +1,8 @@
 {
     "title": "Elije canal",
     "description": "Canales de PR",
-    "items": [
+    "items": 
+    [
         {
             "id": "TM",
             "title": "Telemundo PR Canal 2",
