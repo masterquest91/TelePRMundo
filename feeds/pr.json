@@ -34,6 +34,14 @@
             "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
             "url":"http://cprdp.pr/hls/stream/index.m3u8",
             "streamformat":"hls"
+        },
+                {
+            "id": "NOTIUNO 630 AM",
+            "title": "NOTIUNO 630 WUNO 630 AM",
+            "description": "NotiUno 630 es una reconocida emisora de noticias con más de 35 años operando desde San Juan, Puerto Rico los siete días de la semana y 365 dias",
+            "thumbnail": "https://bloximages.newyork1.vip.townnews.com/notiuno.com/content/tncms/custom/image/02e3e62c-b2c4-11e8-91b8-63a8154b93bd.png",
+            "url":"https://59a564764e2b6.streamlock.net/notiunotv/notiunotv/chunklist_w547953472.m3u8",
+            "streamformat":"hls"
         }
     ]
 }
