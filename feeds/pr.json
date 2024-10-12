@@ -40,7 +40,7 @@
             "title": "TeleORO Canal 13",
             "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
             "thumbnail": "https://static.wixstatic.com/media/28f4f7_6ca657eeca7b459bb55139bf4a626bc3~mv2.png/v1/fill/w_209,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20NUEVO%20CANAL%2013%20TELEORO%20OFICIAL%20copy.png",
-            "url":"http://cprdp.pr/hls/stream/index.m3u8",
+            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiI3MTZmMGYyMzhkMDUzY2U2N2ExMTA4ZThjYWI3MTdkYSIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzI4ODE4OTc0LCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.lNmCG3auhlp0obWUw4QL9ADr0kDgF9oU0WJZNrKDGdHM4cEDPIKYp9CSmPfSJN14kgAKoOcpgJF287OgW4-KKSuBLiBcBx3dww_S_kjMADkEZdlcp4G0mDcai-Sx_qIeIV7K5__X4wOSb1u2bqxmebKwxpZAIMLMZPgdBo38QtHfV3KCVIVKJGW7I9TPRj_JBHNJumMth-KOWg0meHi_wg_5iztRKXV4onCqHw-Rsmy9L3tR7AZRNpfs3bkNI6xNotsS-bu9ggK3r02iZuv-Y_6hxVQQpWjC6gsy2dpBC9-3GA49QqF1wWjyvZSYZwZPrhBeaLZzhvmmWWtAdC5EWQ/manifest/video.m3u8?CMCD=cid%3D%221728775775291%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22a2512a7a-eec1-49ca-89e5-d8afec06d573%22%2Csu",
             "streamformat":"hls"
         },
         {
