@@ -35,6 +35,14 @@
             "url":"http://cprdp.pr/hls/stream/index.m3u8",
             "streamformat":"hls"
         },
+                {
+            "id": "TeleORO",
+            "title": "TeleORO Canal 13",
+            "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
+            "thumbnail": "https://static.wixstatic.com/media/28f4f7_6ca657eeca7b459bb55139bf4a626bc3~mv2.png/v1/fill/w_209,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20NUEVO%20CANAL%2013%20TELEORO%20OFICIAL%20copy.png",
+            "url":"http://cprdp.pr/hls/stream/index.m3u8",
+            "streamformat":"hls"
+        },
         {
             "id": "NOTIUNO 630 AM",
             "title": "NOTIUNO 630 WUNO 630 AM",
