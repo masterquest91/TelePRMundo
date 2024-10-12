@@ -31,7 +31,7 @@
             "id": "WIPR",
             "title": "WIPR Canal 6",
             "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
-            "thumbnail": "https://wipr.pr/wp-content/uploads/2022/04/wipr-logo-purple.png",
+            "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
             "url":"http://cprdp.pr/hls/stream/index.m3u8",
             "streamformat":"hls"
         }
