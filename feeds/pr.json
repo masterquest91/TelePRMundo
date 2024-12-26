@@ -35,12 +35,20 @@
             "url":"https://cprdp.pr/hls/stream/1_2/index.m3u8?",
             "streamformat":"hls"
         },
-                {
+        {
+            "id": "TO",
+            "title": "TeleOnce PR Canal 11",
+            "description": "La mejor programación, las noticias más importantes y el entretenimiento que merece nuestra gente.",
+            "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fwJisChf4-ERCw075hurR3CC6pJGdtMQXRyrfaI3TS87nYBAdJ__NwbhZJ_HRD4AiWb9ae-8Nt3JG_9HCa2hIHcaTYGhrloUIblwh7FLtN4redbqvcqdDs5-E4g37aHAXQ1oj3k5lMnCJVO5cx2UDt7ORN2ujhXzhdFp5muE4jj5lne_I0TDoXxeN0o/s1280/TeleOnce%202024.png",
+            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiI2YTUyMjMwMzAwMmFmZWFjOGZiMTUyY2M5OTBiMWNhYyIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzM1Mjg5OTAyLCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.WuSyWtZ0SBEg_qg1l31kyD9yXkiTQCvcC9IAp3TA2982zCRfKaEHj7g5dq7EiBS6AAYUlWzs4ul9d5w8DQwZuPqAl25w3sDKGxr3euXxR3HzTSxjLemFKSCqkmh20n_l1_54bTjV2l5qXmtyfHVaXGQrduhuafgcTngMSHXG56nBJl2k3UhL0Uf27cy8Ysv8diQD7cbHpRtH0SX8luXAcG2rmHR8cJC2n3eOOf2IBRwNQ_A_UR1f8TitZoc8Nos8r0V6OjhDCGRRqf12LXTjqKAidppV2PW17NmJ54d-dvAaQ5Q1ikmxA_KQjRnW5C7kvrBwMzw96-m8FZIKpsgVcA/manifest/video.m3u8?CMCD=cid%3D%221735246703152%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%224b8aaa52-e4c5-4bbc-bd08-0af3e69c1512%22%2Csu",
+            "streamformat":"hls"
+        },
+        {
             "id": "TeleORO",
             "title": "TeleORO Canal 13",
             "description": "TeleOro Canal 13 Puerto Rico tu Canal Catolico/Cristiano presentado contenido de fe y cultura.",
             "thumbnail": "https://static.wixstatic.com/media/28f4f7_6ca657eeca7b459bb55139bf4a626bc3~mv2.png/v1/fill/w_209,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20NUEVO%20CANAL%2013%20TELEORO%20OFICIAL%20copy.png",
-            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiI3MTZmMGYyMzhkMDUzY2U2N2ExMTA4ZThjYWI3MTdkYSIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzI4ODE4OTc0LCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.lNmCG3auhlp0obWUw4QL9ADr0kDgF9oU0WJZNrKDGdHM4cEDPIKYp9CSmPfSJN14kgAKoOcpgJF287OgW4-KKSuBLiBcBx3dww_S_kjMADkEZdlcp4G0mDcai-Sx_qIeIV7K5__X4wOSb1u2bqxmebKwxpZAIMLMZPgdBo38QtHfV3KCVIVKJGW7I9TPRj_JBHNJumMth-KOWg0meHi_wg_5iztRKXV4onCqHw-Rsmy9L3tR7AZRNpfs3bkNI6xNotsS-bu9ggK3r02iZuv-Y_6hxVQQpWjC6gsy2dpBC9-3GA49QqF1wWjyvZSYZwZPrhBeaLZzhvmmWWtAdC5EWQ/manifest/video.m3u8?CMCD=cid%3D%221728775775291%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22a2512a7a-eec1-49ca-89e5-d8afec06d573%22%2Csu",
+            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiIwZjhmNzExYTA2ZWY1ODUxOGEwZTliZGY1ZDNjZWE1MCIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzM1Mjg4NzQ1LCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.JQ2u9OSFHkel66f9qkye4swQvIttkYSyGridnieIr71AN-e-IVlk1ShFV6Xy4wd2TOgN8vmbFK35wHUs_Ic9coJZPH30h1aijmVWFg_jPi-KLTL0LPBOcDpCqJx_A3LREBiUiWjkSPi_mJ7pKlBzK-GL1GqjbrO13ofK78tXBJLMPOGCXP5K9zYtbQS4jXGy0pK8SbukZCX-2jKoYovaXWWmsiTjjc-bX5H0U4eMS1DAjwhZH7EPSTZQ9GVmoShY4KKrrTzB_4gPtYVh40xS4oIQxI_2l43MCaFjekE6ts_iQIAxvscvJ9VRwsEDEV5dV3MKU57NBYodTVNpEwwSjg/manifest/video.m3u8?CMCD=cid%3D%221735245546663%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%224833886d-cf3d-40bd-9817-f8c44d9f81fb%22%2Csu",
             "streamformat":"hls"
         },
         {
