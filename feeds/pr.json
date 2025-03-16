@@ -32,7 +32,7 @@
             "title": "WIPR Canal 6",
             "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
             "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
-            "url":"https://cprdp.pr/hls/stream/1_2/index.m3u8?",
+            "url":"https://streamwipr.pr/hls/stream/1_2/index.m3u8?tkn=1483690160",
             "streamformat":"hls"
         },
         {
@@ -40,7 +40,7 @@
             "title": "TeleOnce PR Canal 11",
             "description": "La mejor programación, las noticias más importantes y el entretenimiento que merece nuestra gente.",
             "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fwJisChf4-ERCw075hurR3CC6pJGdtMQXRyrfaI3TS87nYBAdJ__NwbhZJ_HRD4AiWb9ae-8Nt3JG_9HCa2hIHcaTYGhrloUIblwh7FLtN4redbqvcqdDs5-E4g37aHAXQ1oj3k5lMnCJVO5cx2UDt7ORN2ujhXzhdFp5muE4jj5lne_I0TDoXxeN0o/s1280/TeleOnce%202024.png",
-            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiI2YTUyMjMwMzAwMmFmZWFjOGZiMTUyY2M5OTBiMWNhYyIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzM1Mjg5OTAyLCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.WuSyWtZ0SBEg_qg1l31kyD9yXkiTQCvcC9IAp3TA2982zCRfKaEHj7g5dq7EiBS6AAYUlWzs4ul9d5w8DQwZuPqAl25w3sDKGxr3euXxR3HzTSxjLemFKSCqkmh20n_l1_54bTjV2l5qXmtyfHVaXGQrduhuafgcTngMSHXG56nBJl2k3UhL0Uf27cy8Ysv8diQD7cbHpRtH0SX8luXAcG2rmHR8cJC2n3eOOf2IBRwNQ_A_UR1f8TitZoc8Nos8r0V6OjhDCGRRqf12LXTjqKAidppV2PW17NmJ54d-dvAaQ5Q1ikmxA_KQjRnW5C7kvrBwMzw96-m8FZIKpsgVcA/manifest/video.m3u8?CMCD=cid%3D%221735246703152%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%224b8aaa52-e4c5-4bbc-bd08-0af3e69c1512%22%2Csu",
+            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiJjMjE2YWQ5YzhkM2NlNjQ3YjI5YTk0Yzk1MzVlMDgwOCIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzQyMTQxOTQ4LCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.R4Ibvw6OmOe9V6tkb3Xni4RpHmiwl79Al747mi6ACaqIALOAsy0kgxjaNWh3KtGcN6YS__imlZl4eYVsEFDLrlewbv5lZC0lOpSf6hQZlvraSTFNgAUZkPD2IoSuS_pKw2618XBOaCCr1hOjTrfQikZPbaB8i8zdKX7CsKViVZ5QEz6yF0VvF5aThdSg1AJPs78s9YFLls7zTrGKVcsLoDfki9h9AS08AADKZMNpSXnVvkJ2cqIUj7P06c_3bsPpAelErGUPuH_TsikbFF9YrEEgrLlwAqFT07B7w7MyMgcjPAc1uD4FOqsIKSiqQyCY7JFV-WujZYEAvrqnWrGE5g/manifest/video.m3u8?CMCD=cid%3D%221742098749276%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22cba5ec68-6ec9-4486-9e8d-5d72e340581c%22%2Csu",
             "streamformat":"hls"
         },
         {
