@@ -1,5 +1,5 @@
 # TelePRMundo
-Un canal de Roku basico para ver TelePRMundo fácilmente. 
+Un canal de Roku basico para ver PR TV fácilmente. 
 
 Éste proyecto fue inspirado por el Crash Course que se consigue aqui:
 https://github.com/learnroku/crash-course/tree/master
