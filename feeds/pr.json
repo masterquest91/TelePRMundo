@@ -64,8 +64,16 @@
             "title": "TeleORO Canal 13",
             "description": "TeleOro Canal 13 Puerto Rico tu Canal Catolico/Cristiano presentado contenido de fe y cultura.",
             "thumbnail": "https://static.wixstatic.com/media/28f4f7_6ca657eeca7b459bb55139bf4a626bc3~mv2.png/v1/fill/w_209,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20NUEVO%20CANAL%2013%20TELEORO%20OFICIAL%20copy.png",
-            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiIwZjhmNzExYTA2ZWY1ODUxOGEwZTliZGY1ZDNjZWE1MCIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzM1Mjg4NzQ1LCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.JQ2u9OSFHkel66f9qkye4swQvIttkYSyGridnieIr71AN-e-IVlk1ShFV6Xy4wd2TOgN8vmbFK35wHUs_Ic9coJZPH30h1aijmVWFg_jPi-KLTL0LPBOcDpCqJx_A3LREBiUiWjkSPi_mJ7pKlBzK-GL1GqjbrO13ofK78tXBJLMPOGCXP5K9zYtbQS4jXGy0pK8SbukZCX-2jKoYovaXWWmsiTjjc-bX5H0U4eMS1DAjwhZH7EPSTZQ9GVmoShY4KKrrTzB_4gPtYVh40xS4oIQxI_2l43MCaFjekE6ts_iQIAxvscvJ9VRwsEDEV5dV3MKU57NBYodTVNpEwwSjg/manifest/video.m3u8?CMCD=cid%3D%221735245546663%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%224833886d-cf3d-40bd-9817-f8c44d9f81fb%22%2Csu",
-            "streamformat":"hls"
+            "url": "https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiJhOWMwMzY4ZTkyZDI4Y2QxYjRjYzYxYzczN2RiNTBjMiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzY1ODY3MjIxLCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.E8pdrj9FJzIlzfjyrESAQPwO_fjRK0DkI1aQeVxuAwJV9LQ2RJ67AaSvOnr3PVPxBVjNDzTn7RzTLjmEVLjdSJ5HEAX1OleApoDfk3KEgHQ4kBz3BhMZXViVS5veAjcumFXAGWfaPP6izHn2NapyxwIHQXI-07BG4mjI_a131V010YKsJdErytKktJxwCoJo5-UfMkxyXPx5ATX-Dzyb0JGhiQXz8YUFbllJ_r0-piWLdbAhx7xCv4AOSLQ2_Y4FWXpBmu4CnD-fs3XW3wD_ZzgWvTw5uEQsr3koJj-16vaoCa_2nrrrPmK57mbF6aHQLXm1YBaJA43Q9daRVmvEUQ/manifest/video.m3u8",
+            "streamformat": "hls"
+        },
+        {
+            "id": "Retro-PR",
+            "title": "The Retro Channel",
+            "description": "The Retro Channel es un canal familiar donde podras ver aquellos videos de los 70, 80 y 90.",
+            "thumbnail": "https://theretrochannel.tv/img/retroplayer.jpg",
+            "url": "https://5fd5567570c0e.streamlock.net/theretrochannel/stream/playlist.m3u8",
+            "streamformat": "hls"
         },
         {
             "id": "NOTIUNO 630 AM",
