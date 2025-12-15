@@ -60,14 +60,6 @@
             "streamformat":"hls"
         },
         {
-            "id": "Retro-PR",
-            "title": "The Retro Channel",
-            "description": "The Retro Channel es un canal familiar donde podras ver aquellos videos de los 70, 80 y 90.",
-            "thumbnail": "https://theretrochannel.tv/img/retroplayer.jpg",
-            "url": "https://5fd5567570c0e.streamlock.net/theretrochannel/stream/playlist.m3u8",
-            "streamformat": "hls"
-        },
-        {
             "id": "TeleORO",
             "title": "TeleORO Canal 13",
             "description": "TeleOro Canal 13 Puerto Rico tu Canal Catolico/Cristiano presentado contenido de fe y cultura.",
