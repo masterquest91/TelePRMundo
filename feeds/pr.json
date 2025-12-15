@@ -58,7 +58,15 @@
             "thumbnail": "https://image.roku.com/developer_channels/prod/04b3a98c94cce1810b407c5d17d23a75bca7f0bbf8d96d5ed99eac492b340f32.png",
             "url":"https://59825a54e4454.streamlock.net:8443/papo351/papo351/playlist.m3u8",
             "streamformat":"hls"
-        },   
+        },   https://5fd5567570c0e.streamlock.net/theretrochannel/stream/playlist.m3u8
+        {
+            "id": "Retro-PR",
+            "title": "The Retro Channel",
+            "description": "The Retro Channel es un canal familiar donde podras ver aquellos videos de los 70, 80 y 90.",
+            "thumbnail": "https://theretrochannel.tv/img/retroplayer.jpg",
+            "url":"https://5fd5567570c0e.streamlock.net/theretrochannel/stream/playlist.m3u8",
+            "streamformat":"hls"
+        },
         {
 
             "id": "TeleORO",
