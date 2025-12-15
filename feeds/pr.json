@@ -15,7 +15,7 @@
             "id": "TM2",
             "title": "Telemundo Punto2",
             "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
-            "thumbnail": "https://dws.compradish.com/sites/compradish.com/pages/images/punto2-color-logo.png",
+            "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02gFnnixCUEfFjDnu4FSA_HO67uIV0Ue0daxTgt8IZowR4_xhDMZMXFHfj4sk7IRxcYKU7tPU5U2pqbLKpePmm6rtyO3d8zh9CIrWLadZ1149EyAM3sg7JJeGwMlI5rhLkYMKmNDftI8/s652/Punto+2+HD+-+Liberty.jpeg",
             "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
             "streamformat":"hls"
         },
@@ -32,7 +32,7 @@
             "title": "WIPR Canal 6",
             "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
             "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
-            "url":"https://streamwipr.pr/hls/stream/1_2/index.m3u8?tkn=1483690160",
+            "url":"https://streamwipr.pr/hls/stream/index.m3u8",
             "streamformat":"hls"
         },
         {
@@ -40,10 +40,27 @@
             "title": "TeleOnce PR Canal 11",
             "description": "La mejor programación, las noticias más importantes y el entretenimiento que merece nuestra gente.",
             "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fwJisChf4-ERCw075hurR3CC6pJGdtMQXRyrfaI3TS87nYBAdJ__NwbhZJ_HRD4AiWb9ae-8Nt3JG_9HCa2hIHcaTYGhrloUIblwh7FLtN4redbqvcqdDs5-E4g37aHAXQ1oj3k5lMnCJVO5cx2UDt7ORN2ujhXzhdFp5muE4jj5lne_I0TDoXxeN0o/s1280/TeleOnce%202024.png",
-            "url":"https://customer-gllhkkbamkskdl1p.cloudflarestream.com/eyJhbGciOiJSUzI1NiIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIn0.eyJzdWIiOiJjMjE2YWQ5YzhkM2NlNjQ3YjI5YTk0Yzk1MzVlMDgwOCIsImtpZCI6ImI3YmIwODNmMDhkNmQ5NWExZjIzZWE3ZWRhOWY4NTZhIiwiZXhwIjoxNzQyMTQxOTQ4LCJhY2Nlc3NSdWxlcyI6W3sidHlwZSI6ImlwLmdlb2lwLmNvdW50cnkiLCJhY3Rpb24iOiJibG9jayIsImNvdW50cnkiOlsiUlUiLCJCWSJdfV19.R4Ibvw6OmOe9V6tkb3Xni4RpHmiwl79Al747mi6ACaqIALOAsy0kgxjaNWh3KtGcN6YS__imlZl4eYVsEFDLrlewbv5lZC0lOpSf6hQZlvraSTFNgAUZkPD2IoSuS_pKw2618XBOaCCr1hOjTrfQikZPbaB8i8zdKX7CsKViVZ5QEz6yF0VvF5aThdSg1AJPs78s9YFLls7zTrGKVcsLoDfki9h9AS08AADKZMNpSXnVvkJ2cqIUj7P06c_3bsPpAelErGUPuH_TsikbFF9YrEEgrLlwAqFT07B7w7MyMgcjPAc1uD4FOqsIKSiqQyCY7JFV-WujZYEAvrqnWrGE5g/manifest/video.m3u8?CMCD=cid%3D%221742098749276%22%2Cmtp%3D500%2Cot%3Dm%2Csf%3Dh%2Csid%3D%22cba5ec68-6ec9-4486-9e8d-5d72e340581c%22%2Csu",
+            "url":"https://live.11-cdn.com/TeleOnce/3fc63fe00050c646635f16b071cd33e2.sdp/playlist.m3u8",
             "streamformat":"hls"
         },
         {
+            "id": "ATV-PR",
+            "title": "América TeVé PR Canal 24 (WJPX)",
+            "description": "Programación de América",
+            "thumbnail": "https://image.xumo.com/v1/channels/channel/99951140/600x337.webp?type=channelTile",
+            "url":"https://live.gideo.video/americateve2/master.m3u8",
+            "streamformat":"hls"
+        }, 
+        {
+            "id": "Buena-PR",
+            "title": "Buena TV Canal 33 (WSTN)",
+            "description": "W33EL-D Canal 33.1 Caguas, P.R. WSTN-LD Canal 33.1 Isabela-Mayaguez, P.R. https://www.buenatv.com/",
+            "thumbnail": "https://image.roku.com/developer_channels/prod/04b3a98c94cce1810b407c5d17d23a75bca7f0bbf8d96d5ed99eac492b340f32.png",
+            "url":"https://59825a54e4454.streamlock.net:8443/papo351/papo351/playlist.m3u8",
+            "streamformat":"hls"
+        },   
+        {
+
             "id": "TeleORO",
             "title": "TeleORO Canal 13",
             "description": "TeleOro Canal 13 Puerto Rico tu Canal Catolico/Cristiano presentado contenido de fe y cultura.",
