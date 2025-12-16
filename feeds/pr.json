@@ -84,6 +84,14 @@
             "streamformat": "hls"
         },
         {
+            "id": "Radio-WZNT",
+            "title": "Radio-Zeta 93",
+            "description": " ¡Tu emisora nacional de la Zalsa!",
+            "thumbnail": "https://lamusica-assets.nyc3.cdn.digitaloceanspaces.com/artworks/6883cbb7a996b4d0ca105b4e-xhdpi.jpg",
+            "url": "https://liveaudio.lamusica.com/PR_WZNT_icy?sw_bp=1",
+            "streamformat": "hls"
+        },        
+        {
             "id": "NOTIUNO 630 AM",
             "title": "NOTIUNO 630 WUNO 630 AM",
             "description": "NotiUno 630 es una reconocida emisora de noticias con más de 35 años operando desde San Juan, Puerto Rico los siete días de la semana y 365 dias",
