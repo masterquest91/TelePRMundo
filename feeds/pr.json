@@ -100,10 +100,7 @@
             "thumbnail": "https://fidelitypr.com/wp-content/uploads/2025/09/cropped-Untitled-design-45.png",
             "poster": "https://fidelitypr.com/wp-content/uploads/2025/09/cropped-Untitled-design-45.png",
             "url": "https://server7.servistreaming.com/proxy/fidelity?mp=/stream?type=.mp3",
-            "streamformat": "mp3",
-            "mediaType": "audio",
-            "live": true,
-            "length": 0
+            "streamformat": "mp3"
         },
         {
             "id": "NOTIUNO 630 AM",
