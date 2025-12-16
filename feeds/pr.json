@@ -80,7 +80,6 @@
             "title": "Radio-WKAQ",
             "description": "La Primera de Puerto Rico",
             "thumbnail": "https://i.iheart.com/v3/re/assets/images/d06cbe54-c35b-4f67-a4c1-5031204f683d.png",
-            "poster": "https://i.iheart.com/v3/re/assets/images/d06cbe54-c35b-4f67-a4c1-5031204f683d.png",
             "url": "https://televicentro.streamguys1.com/wkaqfm/playlist.m3u8?key=96bc32e12ecb6b1bafd065de263d64235ff13cc93b57ff806196d3ecd0891325",
             "streamformat": "hls"
         },
@@ -89,7 +88,6 @@
             "title": "Radio-Zeta 93",
             "description": "¡Tu emisora nacional de la Zalsa!",
             "thumbnail": "https://lamusica-assets.nyc3.cdn.digitaloceanspaces.com/artworks/6883cbb7a996b4d0ca105b4e-xhdpi.jpg",
-            "poster": "https://lamusica-assets.nyc3.cdn.digitaloceanspaces.com/artworks/6883cbb7a996b4d0ca105b4e-xhdpi.jpg",
             "url": "https://liveaudio.lamusica.com/PR_WZNT_icy?sw_bp=1",
             "streamformat": "hls"
         },
@@ -98,7 +96,6 @@
             "title": "Radio-Fidelity 95.7",
             "description": "Escucha tus favoritas de siempre en donde quiera que estés a través de tu celular o computadora. Música en español, baladas y éxitos románticos, estés donde estés. Sintoniza Fidelity 95.7 en vivo y disfruta de tus favoritas de siempre.",
             "thumbnail": "https://fidelitypr.com/wp-content/uploads/2025/09/cropped-Untitled-design-45.png",
-            "poster": "https://fidelitypr.com/wp-content/uploads/2025/09/cropped-Untitled-design-45.png",
             "url": "https://server7.servistreaming.com/proxy/fidelity?mp=/stream?type=.mp3",
             "streamformat": "mp3"
         },
