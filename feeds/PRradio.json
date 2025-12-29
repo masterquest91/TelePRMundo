@@ -1,0 +1,39 @@
+{
+    "title": "Elije estacion de radio",
+    "description": "Estaciones radial de PR",
+    "items": 
+    [
+        {
+            "id": "Radio-WKAQ",
+            "title": "Radio-WKAQ",
+            "description": "La Primera de Puerto Rico",
+            "thumbnail": "https://i.iheart.com/v3/re/assets/images/d06cbe54-c35b-4f67-a4c1-5031204f683d.png",
+            "url": "https://televicentro.streamguys1.com/wkaqfm/playlist.m3u8?key=96bc32e12ecb6b1bafd065de263d64235ff13cc93b57ff806196d3ecd0891325",
+            "streamformat": "hls"
+        },
+        {
+            "id": "Radio-WZNT",
+            "title": "Radio-Zeta 93",
+            "description": "¡Tu emisora nacional de la Zalsa!",
+            "thumbnail": "https://lamusica-assets.nyc3.cdn.digitaloceanspaces.com/artworks/6883cbb7a996b4d0ca105b4e-xhdpi.jpg",
+            "url": "https://liveaudio.lamusica.com/PR_WZNT_icy?sw_bp=1",
+            "streamformat": "hls"
+        },
+        {
+            "id": "Radio-WFID",
+            "title": "Radio-Fidelity 95.7",
+            "description": "Escucha tus favoritas de siempre en donde quiera que estés a través de tu celular o computadora. Música en español, baladas y éxitos románticos, estés donde estés. Sintoniza Fidelity 95.7 en vivo y disfruta de tus favoritas de siempre.",
+            "thumbnail": "https://fidelitypr.com/wp-content/uploads/2025/09/cropped-Untitled-design-45.png",
+            "url": "https://server7.servistreaming.com/proxy/fidelity?mp=/stream?type=.mp3",
+            "streamformat": "mp3"
+        },
+        {
+            "id": "NOTIUNO 630 AM",
+            "title": "NOTIUNO 630 WUNO 630 AM",
+            "description": "NotiUno 630 es una reconocida emisora de noticias con más de 35 años operando desde San Juan, Puerto Rico los siete días de la semana y 365 dias",
+            "thumbnail": "https://bloximages.newyork1.vip.townnews.com/notiuno.com/content/tncms/custom/image/02e3e62c-b2c4-11e8-91b8-63a8154b93bd.png",
+            "url":"https://59a564764e2b6.streamlock.net/notiunotv/notiunotv/chunklist_w547953472.m3u8",
+            "streamformat":"hls"
+        }
+    ]
+}
