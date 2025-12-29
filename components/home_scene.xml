@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="home_scene" extends="Scene" initialFocus="videoplayer">
+<component name="home_scene" extends="Scene" initialFocus="PosterGrid">
   <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
   <children>
-    <!-- Search bar at the top -->
+    <!-- Search bar section - centered at top -->
     <Rectangle
-      id="search_container"
-      translation="[75, 50]"
+      id="search_box"
+      translation="[760, 50]"
       width="400"
       height="60"
       color="0x333333">
@@ -17,28 +17,36 @@
         text="Search" />
     </Rectangle>
     
-    <category_screen
-      id="category_screen"
-      visible="false"
-      translation="[0,0]" />
-    <content_screen
-      id="content_screen"
-      visible="false"
-      translation="[0,0]" />
+    <!-- Main content area -->
+    <PosterGrid
+      id="content_grid"
+      translation="[100, 200]"
+      visible="true"
+      basePosterSize="[500,280]"
+      itemSpacing="[110,110]"
+      caption1NumLines="2"
+      caption2NumLines="1"
+      numColumns="3"
+      numRows="4"
+      />
+    
     <details_screen
       id="details_screen"
       visible="false"
       translation="[0,0]" />
+    
     <Video
       id="videoplayer"
-      visible="true"
+      visible="false"
       translation="[0,0]"
       width="1920"
       height="1080" />
+    
     <Dialog
       title=""
       visible="false"
       id="error_dialog" />
+    
     <Keyboard
       id="search_keyboard"
       visible="false"
