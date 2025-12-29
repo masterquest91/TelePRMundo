@@ -2,9 +2,24 @@
 <component name="home_scene" extends="Scene" initialFocus="videoplayer">
   <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
   <children>
+    <!-- Search bar at the top -->
+    <Rectangle
+      id="search_container"
+      translation="[75, 50]"
+      width="400"
+      height="60"
+      color="0x333333">
+      <Label
+        id="search_label"
+        translation="[15, 15]"
+        font="font:MediumSystemFont"
+        color="0x888888"
+        text="Search" />
+    </Rectangle>
+    
     <category_screen
       id="category_screen"
-      visible="true"
+      visible="false"
       translation="[0,0]" />
     <content_screen
       id="content_screen"
@@ -16,7 +31,7 @@
       translation="[0,0]" />
     <Video
       id="videoplayer"
-      visible="false"
+      visible="true"
       translation="[0,0]"
       width="1920"
       height="1080" />
@@ -24,5 +39,9 @@
       title=""
       visible="false"
       id="error_dialog" />
+    <Keyboard
+      id="search_keyboard"
+      visible="false"
+      translation="[200, 200]" />
   </children>
 </component>
