@@ -4,7 +4,7 @@
     "items": 
     [
         {
-            "id": "TM",
+            "id": "TV-TM",
             "title": "Telemundo PR Canal 2",
             "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
             "thumbnail": "https://media.telemundopr.com/2022/09/Telemundo-PR-1-1.png",
@@ -12,7 +12,7 @@
             "streamformat":"hls"
         },
         {
-            "id": "TM2",
+            "id": "TV-TM2",
             "title": "Telemundo Punto2",
             "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
             "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02gFnnixCUEfFjDnu4FSA_HO67uIV0Ue0daxTgt8IZowR4_xhDMZMXFHfj4sk7IRxcYKU7tPU5U2pqbLKpePmm6rtyO3d8zh9CIrWLadZ1149EyAM3sg7JJeGwMlI5rhLkYMKmNDftI8/s652/Punto+2+HD+-+Liberty.jpeg",
@@ -20,7 +20,7 @@
             "streamformat":"hls"
         },
         {
-            "id": "WAPA",
+            "id": "TV-WAPA",
             "title": "WAPA PR Canal 4",
             "description": "WAPA",
             "thumbnail": "https://bloximages.newyork1.vip.townnews.com/wapa.tv/content/tncms/custom/image/2bee9ed0-6752-11ed-8535-7fba1705bfef.png",
@@ -28,7 +28,7 @@
             "streamformat":"hls"
         },
         {
-            "id": "WIPR",
+            "id": "TV-WIPR",
             "title": "WIPR Canal 6",
             "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
             "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
@@ -36,7 +36,7 @@
             "streamformat":"hls"
         },
         {
-            "id": "TO",
+            "id": "TV-TO",
             "title": "TeleOnce PR Canal 11",
             "description": "La mejor programación, las noticias más importantes y el entretenimiento que merece nuestra gente.",
             "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fwJisChf4-ERCw075hurR3CC6pJGdtMQXRyrfaI3TS87nYBAdJ__NwbhZJ_HRD4AiWb9ae-8Nt3JG_9HCa2hIHcaTYGhrloUIblwh7FLtN4redbqvcqdDs5-E4g37aHAXQ1oj3k5lMnCJVO5cx2UDt7ORN2ujhXzhdFp5muE4jj5lne_I0TDoXxeN0o/s1280/TeleOnce%202024.png",
@@ -44,7 +44,7 @@
             "streamformat":"hls"
         },
         {
-            "id": "ATV-PR",
+            "id": "TV-ATV-PR",
             "title": "América TeVé PR Canal 24 (WJPX)",
             "description": "Programación de América",
             "thumbnail": "https://image.xumo.com/v1/channels/channel/99951140/600x337.webp?type=channelTile",
@@ -52,7 +52,7 @@
             "streamformat":"hls"
         }, 
         {
-            "id": "Buena-PR",
+            "id": "TV-Buena-PR",
             "title": "Buena TV Canal 33 (WSTN)",
             "description": "W33EL-D Canal 33.1 Caguas, P.R. WSTN-LD Canal 33.1 Isabela-Mayaguez, P.R. https://www.buenatv.com/",
             "thumbnail": "https://image.roku.com/developer_channels/prod/04b3a98c94cce1810b407c5d17d23a75bca7f0bbf8d96d5ed99eac492b340f32.png",
@@ -60,7 +60,7 @@
             "streamformat":"hls"
         },
         {
-            "id": "TeleORO",
+            "id": "TV-TeleORO",
             "title": "TeleORO Canal 13",
             "description": "TeleOro Canal 13 Puerto Rico tu Canal Catolico/Cristiano presentado contenido de fe y cultura.",
             "thumbnail": "https://static.wixstatic.com/media/28f4f7_6ca657eeca7b459bb55139bf4a626bc3~mv2.png/v1/fill/w_209,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO%20NUEVO%20CANAL%2013%20TELEORO%20OFICIAL%20copy.png",
@@ -68,7 +68,7 @@
             "streamformat": "hls"
         },
         {
-            "id": "Retro-PR",
+            "id": "TV-Retro-PR",
             "title": "The Retro Channel",
             "description": "The Retro Channel es un canal familiar donde podras ver aquellos videos de los 70, 80 y 90.",
             "thumbnail": "https://theretrochannel.tv/img/retroplayer.jpg",
@@ -100,7 +100,7 @@
             "streamformat": "mp3"
         },
         {
-            "id": "NOTIUNO 630 AM",
+            "id": "Radio-NOTIUNO 630 AM",
             "title": "NOTIUNO 630 WUNO 630 AM",
             "description": "NotiUno 630 es una reconocida emisora de noticias con más de 35 años operando desde San Juan, Puerto Rico los siete días de la semana y 365 dias",
             "thumbnail": "https://bloximages.newyork1.vip.townnews.com/notiuno.com/content/tncms/custom/image/02e3e62c-b2c4-11e8-91b8-63a8154b93bd.png",
