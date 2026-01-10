@@ -1,39 +1,113 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="home_scene" extends="Scene" initialFocus="PosterGrid">
+<component name="home_scene" extends="Scene" initialFocus="tv_carousel">
   <script type="text/brightscript" uri="pkg:/components/home_scene.brs" />
   <children>
-    <!-- Search bar section - centered at top -->
+    <!-- Background image with purple overlay -->
+    <Poster
+      id="background_image"
+      uri="pkg:/images/splash_fhd.png"
+      width="1920"
+      height="1080"
+      translation="[0,0]"
+      loadDisplayMode="scaleToFit" />
+    
+    <!-- Purple overlay mask to dampen colors -->
     <Rectangle
-      id="search_box"
-      translation="[760, 50]"
-      width="400"
-      height="60"
-      color="0x333333">
+      id="overlay_mask"
+      width="1920"
+      height="1080"
+      translation="[0,0]"
+      color="0x662D91"
+      opacity="0.7" />
+    
+    <!-- Preview Area -->
+    <Rectangle
+      id="preview_container"
+      translation="[460, 100]"
+      width="1000"
+      height="400"
+      color="0x000000"
+      opacity="0.8">
+      
+      <!-- Left section: Thumbnail -->
+      <Poster
+        id="preview_thumbnail"
+        translation="[20, 20]"
+        width="450"
+        height="360"
+        loadDisplayMode="scaleToFit" />
+      
+      <!-- Divider line -->
+      <Rectangle
+        id="divider"
+        translation="[490, 20]"
+        width="2"
+        height="360"
+        color="0xFFFFFF" />
+      
+      <!-- Right section: Title and Description -->
       <Label
-        id="search_label"
-        translation="[15, 15]"
+        id="preview_title"
+        translation="[510, 40]"
+        width="460"
+        font="font:LargeBoldSystemFont"
+        color="0xFFFFFF"
+        wrap="true"
+        text="" />
+      
+      <Label
+        id="preview_description"
+        translation="[510, 120]"
+        width="460"
+        height="240"
         font="font:MediumSystemFont"
-        color="0x888888"
-        text="Search" />
+        color="0xCCCCCC"
+        wrap="true"
+        text="" />
     </Rectangle>
     
-    <!-- Main content area -->
-    <PosterGrid
-      id="content_grid"
-      translation="[100, 200]"
-      visible="true"
-      basePosterSize="[500,280]"
-      itemSpacing="[110,110]"
-      caption1NumLines="2"
-      caption2NumLines="1"
-      numColumns="3"
-      numRows="4"
-      />
+    <!-- TV Section -->
+    <Label
+      id="tv_label"
+      translation="[100, 550]"
+      font="font:LargeBoldSystemFont"
+      color="0xFFFFFF"
+      text="TV" />
     
-    <details_screen
-      id="details_screen"
+    <PosterGrid
+      id="tv_carousel"
+      translation="[100, 620]"
+      basePosterSize="[400, 280]"
+      itemSpacing="[30, 0]"
+      numRows="1"
+      numColumns="5"
+      visible="true" />
+    
+    <!-- Radio Section -->
+    <Label
+      id="radio_label"
+      translation="[100, 930]"
+      font="font:LargeBoldSystemFont"
+      color="0xFFFFFF"
+      text="Radio" />
+    
+    <PosterGrid
+      id="radio_carousel"
+      translation="[100, 1000]"
+      basePosterSize="[400, 280]"
+      itemSpacing="[30, 0]"
+      numRows="1"
+      numColumns="5"
+      visible="true" />
+    
+    <!-- Radio background poster (shown during radio playback) -->
+    <Poster
+      id="radio_background"
       visible="false"
-      translation="[0,0]" />
+      translation="[0,0]"
+      width="1920"
+      height="1080"
+      loadDisplayMode="scaleToFill" />
     
     <Video
       id="videoplayer"
@@ -46,10 +120,5 @@
       title=""
       visible="false"
       id="error_dialog" />
-    
-    <Keyboard
-      id="search_keyboard"
-      visible="false"
-      translation="[200, 200]" />
   </children>
 </component>
