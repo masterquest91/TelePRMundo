@@ -76,6 +76,14 @@
             "streamformat": "hls"
         },
         {
+            "id": "LIVE-TMSANSE",
+            "title": "[En Vivo!] Telemundo presenta: SanSe 2026",
+            "description": " Verifica la gran oferta artística de las Fiestas de la Calle San Sebastián.",
+            "thumbnail": "https://media.telemundopr.com/2019/09/sanse.png",
+            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
+            "streamformat":"hls"
+        },
+        {
             "id": "Radio-WKAQ",
             "title": "Radio-WKAQ",
             "description": "La Primera de Puerto Rico",
