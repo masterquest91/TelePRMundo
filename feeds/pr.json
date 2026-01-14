@@ -12,14 +12,6 @@
             "streamformat":"hls"
         },
         {
-            "id": "TV-TM2",
-            "title": "Telemundo Punto2",
-            "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
-            "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02gFnnixCUEfFjDnu4FSA_HO67uIV0Ue0daxTgt8IZowR4_xhDMZMXFHfj4sk7IRxcYKU7tPU5U2pqbLKpePmm6rtyO3d8zh9CIrWLadZ1149EyAM3sg7JJeGwMlI5rhLkYMKmNDftI8/s652/Punto+2+HD+-+Liberty.jpeg",
-            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
-            "streamformat":"hls"
-        },
-        {
             "id": "TV-WAPA",
             "title": "WAPA PR Canal 4",
             "description": "WAPA",
@@ -41,6 +33,14 @@
             "description": "La mejor programación, las noticias más importantes y el entretenimiento que merece nuestra gente.",
             "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0fwJisChf4-ERCw075hurR3CC6pJGdtMQXRyrfaI3TS87nYBAdJ__NwbhZJ_HRD4AiWb9ae-8Nt3JG_9HCa2hIHcaTYGhrloUIblwh7FLtN4redbqvcqdDs5-E4g37aHAXQ1oj3k5lMnCJVO5cx2UDt7ORN2ujhXzhdFp5muE4jj5lne_I0TDoXxeN0o/s1280/TeleOnce%202024.png",
             "url":"https://live.11-cdn.com/TeleOnce/3fc63fe00050c646635f16b071cd33e2.sdp/playlist.m3u8",
+            "streamformat":"hls"
+        },
+        {
+            "id": "TV-TM2",
+            "title": "Telemundo Punto2",
+            "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
+            "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02gFnnixCUEfFjDnu4FSA_HO67uIV0Ue0daxTgt8IZowR4_xhDMZMXFHfj4sk7IRxcYKU7tPU5U2pqbLKpePmm6rtyO3d8zh9CIrWLadZ1149EyAM3sg7JJeGwMlI5rhLkYMKmNDftI8/s652/Punto+2+HD+-+Liberty.jpeg",
+            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
             "streamformat":"hls"
         },
         {
