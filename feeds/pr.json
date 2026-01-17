@@ -12,6 +12,14 @@
             "streamformat":"hls"
         },
         {
+            "id": "TV-TMSANSE",
+            "title": "[En Vivo!] Telemundo presenta: SanSe 2026",
+            "description": " Verifica la gran oferta artística de las Fiestas de la Calle San Sebastián.",
+            "thumbnail": "https://media.telemundopr.com/2019/09/sanse.png",
+            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
+            "streamformat":"hls"
+        },
+        {
             "id": "TV-WAPA",
             "title": "WAPA PR Canal 4",
             "description": "WAPA",
@@ -74,14 +82,6 @@
             "thumbnail": "https://theretrochannel.tv/img/retroplayer.jpg",
             "url": "https://5fd5567570c0e.streamlock.net/theretrochannel/stream/playlist.m3u8",
             "streamformat": "hls"
-        },
-        {
-            "id": "TV-TMSANSE",
-            "title": "[En Vivo!] Telemundo presenta: SanSe 2026",
-            "description": " Verifica la gran oferta artística de las Fiestas de la Calle San Sebastián.",
-            "thumbnail": "https://media.telemundopr.com/2019/09/sanse.png",
-            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
-            "streamformat":"hls"
         },
         {
             "id": "Radio-WKAQ",
