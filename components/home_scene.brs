@@ -1,32 +1,40 @@
 function init()
 	? "[home_scene] init"
 
-	m.tv_carousel = m.top.findNode("tv_carousel")
-	m.radio_carousel = m.top.findNode("radio_carousel")
+	m.rows_container = m.top.findNode("rows_container")
+	m.tv_row = m.top.findNode("tv_row")
+	m.radio_row = m.top.findNode("radio_row")
+	m.live_row = m.top.findNode("live_row")
 	m.preview_thumbnail = m.top.findNode("preview_thumbnail")
 	m.preview_title = m.top.findNode("preview_title")
 	m.preview_description = m.top.findNode("preview_description")
+	m.radio_bg_container = m.top.findNode("radio_bg_container")
 	m.radio_background = m.top.findNode("radio_background")
+	m.stream_nav_modal = m.top.findNode("stream_nav_modal")
+	m.nav_next_title = m.top.findNode("nav_next_title")
+	m.nav_prev_title = m.top.findNode("nav_prev_title")
 	m.error_dialog = m.top.findNode("error_dialog")
 	m.videoplayer = m.top.findNode("videoplayer")
 	
 	initializeVideoPlayer()
 	
-	m.tv_carousel.observeField("itemFocused", "onTVFocusChanged")
-	m.tv_carousel.observeField("itemSelected", "onTVSelected")
-	m.radio_carousel.observeField("itemFocused", "onRadioFocusChanged")
-	m.radio_carousel.observeField("itemSelected", "onRadioSelected")
+	m.tv_row.observeField("itemFocused", "onTVItemFocused")
+	m.tv_row.observeField("itemSelected", "onTVItemSelected")
+	m.radio_row.observeField("itemFocused", "onRadioItemFocused")
+	m.radio_row.observeField("itemSelected", "onRadioItemSelected")
+	m.live_row.observeField("itemFocused", "onLiveItemFocused")
+	m.live_row.observeField("itemSelected", "onLiveItemSelected")
 
 	' Store content and state
-	m.tvContent = invalid
-	m.radioContent = invalid
-	m.tvFocusIndex = 0
-	m.radioFocusIndex = 0
-	m.currentCarousel = "tv"
-	m.currentThumbnail = ""
+	m.tvContent = []
+	m.radioContent = []
+	m.liveContent = []
+	m.currentRow = 0 ' 0=TV, 1=Radio, 2=Live
+	m.currentStreamIndex = 0
+	m.currentStreamType = ""
 	
-	' Set initial focus to TV carousel
-	m.tv_carousel.setFocus(true)
+	' Set initial focus to TV row
+	m.tv_row.setFocus(true)
 
 	' Load feed
 	loadFeed()
@@ -54,9 +62,10 @@ sub onFeedResponse(obj)
 	if data <> invalid and data.items <> invalid
 		? "Feed loaded with "; data.items.Count(); " items"
 		
-		' Separate TV and Radio items based on ID prefix
+		' Separate TV, Radio, and Live items based on ID prefix
 		tvItems = []
 		radioItems = []
+		liveItems = []
 		
 		for each item in data.items
 			if item.id <> invalid
@@ -65,19 +74,23 @@ sub onFeedResponse(obj)
 					tvItems.Push(item)
 				else if Left(itemId, 6) = "radio-"
 					radioItems.Push(item)
+				else if Left(itemId, 5) = "live-"
+					liveItems.Push(item)
 				end if
 			end if
 		end for
 		
 		? "TV items: "; tvItems.Count()
 		? "Radio items: "; radioItems.Count()
+		? "Live items: "; liveItems.Count()
 		
 		' Store for later use
 		m.tvContent = tvItems
 		m.radioContent = radioItems
+		m.liveContent = liveItems
 		
-		' Display carousels
-		displayCarousels()
+		' Display rows
+		displayRows()
 		
 		' Update preview with first TV item
 		if tvItems.Count() > 0
@@ -88,11 +101,10 @@ sub onFeedResponse(obj)
 	end if
 end sub
 
-sub displayCarousels()
-	' Create TV carousel content
-	if m.tvContent <> invalid and m.tvContent.Count() > 0
+sub displayRows()
+	' Populate TV row
+	if m.tvContent.Count() > 0
 		tvContent = createObject("roSGNode", "ContentNode")
-		
 		for each item in m.tvContent
 			node = createObject("roSGNode", "ContentNode")
 			node.title = item.title
@@ -100,14 +112,12 @@ sub displayCarousels()
 			node.HDGRIDPOSTERURL = item.thumbnail
 			tvContent.appendChild(node)
 		end for
-		
-		m.tv_carousel.content = tvContent
+		m.tv_row.content = tvContent
 	end if
 	
-	' Create Radio carousel content
-	if m.radioContent <> invalid and m.radioContent.Count() > 0
+	' Populate Radio row
+	if m.radioContent.Count() > 0
 		radioContent = createObject("roSGNode", "ContentNode")
-		
 		for each item in m.radioContent
 			node = createObject("roSGNode", "ContentNode")
 			node.title = item.title
@@ -115,56 +125,75 @@ sub displayCarousels()
 			node.HDGRIDPOSTERURL = item.thumbnail
 			radioContent.appendChild(node)
 		end for
-		
-		m.radio_carousel.content = radioContent
+		m.radio_row.content = radioContent
+	end if
+	
+	' Populate Live row
+	if m.liveContent.Count() > 0
+		liveContent = createObject("roSGNode", "ContentNode")
+		for each item in m.liveContent
+			node = createObject("roSGNode", "ContentNode")
+			node.title = item.title
+			node.HDPosterUrl = item.thumbnail
+			node.HDGRIDPOSTERURL = item.thumbnail
+			liveContent.appendChild(node)
+		end for
+		m.live_row.content = liveContent
 	end if
 end sub
 
-function createCarouselNode(item as Object) as Object
-	node = createObject("roSGNode", "ContentNode")
-	
-	' Create markup with black background
-	markup = "<Poster uri='" + item.thumbnail + "' width='400' height='280' loadDisplayMode='scaleToFit'/>"
-	
-	node.title = item.title
-	node.HDPosterUrl = item.thumbnail
-	node.streamformat = item.streamformat
-	node.url = item.url
-	node.description = item.description
-	
-	return node
-end function
-
-sub onTVFocusChanged(obj)
+sub onTVItemFocused(obj)
 	focusedIndex = obj.getData()
-	? "TV focus changed to: "; focusedIndex
-	m.currentCarousel = "tv"
-	m.tvFocusIndex = focusedIndex
-	
-	if m.tvContent <> invalid and focusedIndex >= 0 and focusedIndex < m.tvContent.Count()
+	? "TV item focused: "; focusedIndex
+	if focusedIndex >= 0 and focusedIndex < m.tvContent.Count()
 		updatePreview(m.tvContent[focusedIndex])
 	end if
 end sub
 
-sub onTVSelected(obj)
+sub onTVItemSelected(obj)
 	? "TV item selected"
-	playSelectedItem("tv")
+	selectedIndex = obj.getData()
+	if selectedIndex >= 0 and selectedIndex < m.tvContent.Count()
+		m.currentStreamIndex = selectedIndex
+		m.currentStreamType = "tv"
+		playItem(m.tvContent[selectedIndex], "tv")
+	end if
 end sub
 
-sub onRadioFocusChanged(obj)
+sub onRadioItemFocused(obj)
 	focusedIndex = obj.getData()
-	? "Radio focus changed to: "; focusedIndex
-	m.currentCarousel = "radio"
-	m.radioFocusIndex = focusedIndex
-	
-	if m.radioContent <> invalid and focusedIndex >= 0 and focusedIndex < m.radioContent.Count()
+	? "Radio item focused: "; focusedIndex
+	if focusedIndex >= 0 and focusedIndex < m.radioContent.Count()
 		updatePreview(m.radioContent[focusedIndex])
 	end if
 end sub
 
-sub onRadioSelected(obj)
+sub onRadioItemSelected(obj)
 	? "Radio item selected"
-	playSelectedItem("radio")
+	selectedIndex = obj.getData()
+	if selectedIndex >= 0 and selectedIndex < m.radioContent.Count()
+		m.currentStreamIndex = selectedIndex
+		m.currentStreamType = "radio"
+		playItem(m.radioContent[selectedIndex], "radio")
+	end if
+end sub
+
+sub onLiveItemFocused(obj)
+	focusedIndex = obj.getData()
+	? "Live item focused: "; focusedIndex
+	if focusedIndex >= 0 and focusedIndex < m.liveContent.Count()
+		updatePreview(m.liveContent[focusedIndex])
+	end if
+end sub
+
+sub onLiveItemSelected(obj)
+	? "Live item selected"
+	selectedIndex = obj.getData()
+	if selectedIndex >= 0 and selectedIndex < m.liveContent.Count()
+		m.currentStreamIndex = selectedIndex
+		m.currentStreamType = "live"
+		playItem(m.liveContent[selectedIndex], "live")
+	end if
 end sub
 
 sub updatePreview(item as Object)
@@ -172,7 +201,6 @@ sub updatePreview(item as Object)
 	m.preview_thumbnail.uri = item.thumbnail
 	m.preview_title.text = item.title
 	m.preview_description.text = item.description
-	m.currentThumbnail = item.thumbnail
 	
 	' Adjust title font size if it wraps
 	m.preview_title.font = "font:LargeBoldSystemFont"
@@ -182,19 +210,148 @@ sub updatePreview(item as Object)
 	
 	' Adjust description font size if it exceeds bounds
 	m.preview_description.font = "font:MediumSystemFont"
-	' Check if content exceeds the available height (220px)
-	' Note: Roku doesn't provide exact height measurement, so we use line count as proxy
 	if m.preview_description.numLines > 8
 		m.preview_description.font = "font:SmallSystemFont"
 	end if
 end sub
 
-sub playSelectedItem(carouselType as String)
+sub switchToRow(rowIndex as Integer)
+	' Move the focused row to the top of the carousel area
+	m.currentRow = rowIndex
+	
+	' Calculate new Y position for rows container
+	' Each row is 400px tall (50px label + 20px spacing + 70px translation + 245px items + padding)
+	newY = -(rowIndex * 400)
+	
+	' Animate the rows container
+	animateRows = m.rows_container.createChild("Animation")
+	animateRows.duration = 0.3
+	animateInterp = animateRows.createChild("Vector2DFieldInterpolator")
+	animateInterp.key = [0, 1]
+	animateInterp.keyValue = [m.rows_container.translation, [0, newY]]
+	animateInterp.fieldToInterp = "rows_container.translation"
+	animateRows.control = "start"
+	
+	' Set focus to the appropriate row
+	if rowIndex = 0
+		m.tv_row.setFocus(true)
+	else if rowIndex = 1
+		m.radio_row.setFocus(true)
+	else if rowIndex = 2
+		m.live_row.setFocus(true)
+	end if
+end sub
+
+sub playItem(item as Object, itemType as String)
+	' Create content node for playback
+	playContent = createObject("roSGNode", "ContentNode")
+	playContent.url = item.url
+	playContent.streamformat = item.streamformat
+	playContent.title = item.title
+	
+	' Show thumbnail background for radio streams
+	if itemType = "radio"
+		m.radio_background.uri = item.thumbnail
+		m.radio_bg_container.visible = true
+	else
+		m.radio_bg_container.visible = false
+	end if
+	
+	m.tv_row.visible = false
+	m.radio_row.visible = false
+	m.live_row.visible = false
+	m.videoplayer.visible = true
+	m.videoplayer.setFocus(true)
+	m.videoplayer.content = playContent
+	m.videoplayer.control = "play"
+	
+	' Show navigation modal and update it
+	updateStreamNavModal()
+	m.stream_nav_modal.visible = true
+end sub
+
+sub updateStreamNavModal()
+	' Update the stream navigation modal with next/prev stream info
+	contentArray = []
+	if m.currentStreamType = "tv"
+		contentArray = m.tvContent
+	else if m.currentStreamType = "radio"
+		contentArray = m.radioContent
+	else if m.currentStreamType = "live"
+		contentArray = m.liveContent
+	end if
+	
+	if contentArray.Count() > 0
+		' Calculate next stream (wrap around)
+		nextIndex = m.currentStreamIndex + 1
+		if nextIndex >= contentArray.Count()
+			nextIndex = 0
+		end if
+		
+		' Calculate previous stream (wrap around)
+		prevIndex = m.currentStreamIndex - 1
+		if prevIndex < 0
+			prevIndex = contentArray.Count() - 1
+		end if
+		
+		' Update modal labels
+		m.nav_next_title.text = contentArray[nextIndex].id
+		m.nav_prev_title.text = contentArray[prevIndex].id
+	end if
+end sub
+
+sub navigateToNextStream()
+	contentArray = []
+	if m.currentStreamType = "tv"
+		contentArray = m.tvContent
+	else if m.currentStreamType = "radio"
+		contentArray = m.radioContent
+	else if m.currentStreamType = "live"
+		contentArray = m.liveContent
+	end if
+	
+	if contentArray.Count() > 0
+		' Move to next stream (with wrap)
+		m.currentStreamIndex = m.currentStreamIndex + 1
+		if m.currentStreamIndex >= contentArray.Count()
+			m.currentStreamIndex = 0
+		end if
+		
+		' Play the new stream
+		playStreamByIndex(m.currentStreamIndex)
+	end if
+end sub
+
+sub navigateToPrevStream()
+	contentArray = []
+	if m.currentStreamType = "tv"
+		contentArray = m.tvContent
+	else if m.currentStreamType = "radio"
+		contentArray = m.radioContent
+	else if m.currentStreamType = "live"
+		contentArray = m.liveContent
+	end if
+	
+	if contentArray.Count() > 0
+		' Move to previous stream (with wrap)
+		m.currentStreamIndex = m.currentStreamIndex - 1
+		if m.currentStreamIndex < 0
+			m.currentStreamIndex = contentArray.Count() - 1
+		end if
+		
+		' Play the new stream
+		playStreamByIndex(m.currentStreamIndex)
+	end if
+end sub
+
+sub playStreamByIndex(index as Integer)
 	selectedItem = invalid
-	if carouselType = "tv" and m.tvContent <> invalid
-		selectedItem = m.tvContent[m.tvFocusIndex]
-	else if carouselType = "radio" and m.radioContent <> invalid
-		selectedItem = m.radioContent[m.radioFocusIndex]
+	if m.currentStreamType = "tv"
+		selectedItem = m.tvContent[index]
+	else if m.currentStreamType = "radio"
+		selectedItem = m.radioContent[index]
+	else if m.currentStreamType = "live"
+		selectedItem = m.liveContent[index]
 	end if
 	
 	if selectedItem <> invalid
@@ -204,20 +361,16 @@ sub playSelectedItem(carouselType as String)
 		playContent.streamformat = selectedItem.streamformat
 		playContent.title = selectedItem.title
 		
-		' Show thumbnail background for radio streams
-		if carouselType = "radio"
+		' Update radio background if needed
+		if m.currentStreamType = "radio"
 			m.radio_background.uri = selectedItem.thumbnail
-			m.radio_background.visible = true
-		else
-			m.radio_background.visible = false
 		end if
 		
-		m.tv_carousel.visible = false
-		m.radio_carousel.visible = false
-		m.videoplayer.visible = true
-		m.videoplayer.setFocus(true)
 		m.videoplayer.content = playContent
 		m.videoplayer.control = "play"
+		
+		' Update navigation modal
+		updateStreamNavModal()
 	end if
 end sub
 
@@ -236,16 +389,22 @@ end sub
 sub closeVideo()
 	m.videoplayer.control = "stop"
 	m.videoplayer.visible = false
-	m.radio_background.visible = false
-	m.tv_carousel.visible = true
-	m.radio_carousel.visible = true
+	m.radio_bg_container.visible = false
+	m.stream_nav_modal.visible = false
+	m.tv_row.visible = true
+	m.radio_row.visible = true
+	m.live_row.visible = true
 	
-	' Return focus to the last active carousel
-	if m.currentCarousel = "tv"
-		m.tv_carousel.setFocus(true)
-	else
-		m.radio_carousel.setFocus(true)
-	end if
+	' Reload feed from JSON (this will reset all carousels)
+	loadFeed()
+	
+	' Reset to TV row at top
+	m.currentRow = 0
+	switchToRow(0)
+end sub
+
+sub onFeedError(obj)
+	showErrorDialog(obj.getData())
 end sub
 
 sub showErrorDialog(message)
@@ -258,92 +417,59 @@ end sub
 function onKeyEvent(key, press) as Boolean
 	? "[home_scene] onKeyEvent", key, press
 	
-	if key = "left" and press
-		if m.currentCarousel = "tv" and m.tvContent <> invalid
-			' Loop carousel to the left
-			m.tvFocusIndex = m.tvFocusIndex - 1
-			if m.tvFocusIndex < 0
-				m.tvFocusIndex = m.tvContent.Count() - 1
-			end if
-			m.tv_carousel.jumpToItem = m.tvFocusIndex
+	' Handle stream navigation when video is playing
+	if m.videoplayer.visible
+		if key = "up" and press
+			navigateToNextStream()
 			return true
-		else if m.currentCarousel = "radio" and m.radioContent <> invalid
-			m.radioFocusIndex = m.radioFocusIndex - 1
-			if m.radioFocusIndex < 0
-				m.radioFocusIndex = m.radioContent.Count() - 1
-			end if
-			m.radio_carousel.jumpToItem = m.radioFocusIndex
+		else if key = "down" and press
+			navigateToPrevStream()
+			return true
+		else if key = "back" and press
+			closeVideo()
 			return true
 		end if
+		return false
 	end if
 	
-	if key = "right" and press
-		if m.currentCarousel = "tv" and m.tvContent <> invalid
-			' Loop carousel to the right
-			m.tvFocusIndex = m.tvFocusIndex + 1
-			if m.tvFocusIndex >= m.tvContent.Count()
-				m.tvFocusIndex = 0
-			end if
-			m.tv_carousel.jumpToItem = m.tvFocusIndex
-			return true
-		else if m.currentCarousel = "radio" and m.radioContent <> invalid
-			m.radioFocusIndex = m.radioFocusIndex + 1
-			if m.radioFocusIndex >= m.radioContent.Count()
-				m.radioFocusIndex = 0
-			end if
-			m.radio_carousel.jumpToItem = m.radioFocusIndex
+	' Handle row switching
+	if key = "down" and press
+		' Move to next row
+		nextRow = m.currentRow + 1
+		if nextRow > 2 ' We have 3 rows (0=TV, 1=Radio, 2=Live)
+			nextRow = 2 ' Stop at last row
+		end if
+		if nextRow <> m.currentRow
+			switchToRow(nextRow)
 			return true
 		end if
 	end if
 	
 	if key = "up" and press
-		if m.currentCarousel = "tv"
-			' Loop from TV to Radio
-			m.radio_carousel.setFocus(true)
-			m.radio_carousel.jumpToItem = m.radioFocusIndex
-			m.currentCarousel = "radio"
-			return true
-		else if m.currentCarousel = "radio"
-			' Loop from Radio to TV
-			m.tv_carousel.setFocus(true)
-			m.tv_carousel.jumpToItem = m.tvFocusIndex
-			m.currentCarousel = "tv"
+		' Move to previous row
+		prevRow = m.currentRow - 1
+		if prevRow < 0
+			prevRow = 0 ' Stop at first row
+		end if
+		if prevRow <> m.currentRow
+			switchToRow(prevRow)
 			return true
 		end if
 	end if
 	
-	if key = "down" and press
-		if m.currentCarousel = "tv"
-			' Loop from TV to Radio
-			m.radio_carousel.setFocus(true)
-			m.radio_carousel.jumpToItem = m.radioFocusIndex
-			m.currentCarousel = "radio"
-			return true
-		else if m.currentCarousel = "radio"
-			' Loop from Radio to TV
-			m.tv_carousel.setFocus(true)
-			m.tv_carousel.jumpToItem = m.tvFocusIndex
-			m.currentCarousel = "tv"
-			return true
-		end if
-	end if
-	
-	if key = "OK" and press
-		' Play the selected item directly
-		if m.currentCarousel = "tv"
-			playSelectedItem("tv")
-		else if m.currentCarousel = "radio"
-			playSelectedItem("radio")
-		end if
-		return true
-	end if
-	
+	' Handle back button in menu - reload carousels
 	if key = "back" and press
-		if m.videoplayer.visible
-			closeVideo()
-			return true
-		end if
+		' Reload feed from JSON to reset everything
+		loadFeed()
+		' Reset to TV row at top
+		m.currentRow = 0
+		switchToRow(0)
+		return true
 	end if
 	
 	return false
 end function
+
+sub resetBackFlag()
+	' No longer needed - removed back button warning
+end sub
