@@ -20,6 +20,14 @@
             "streamformat":"hls"
         },
         {
+            "id": "TV-WIPR",
+            "title": "WIPR Canal 6",
+            "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
+            "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
+            "url":"http://hls-proxy.adiazriv.workers.dev/index.m3u8",
+            "streamformat":"hls"
+        },
+        {
             "id": "TV-WAPA",
             "title": "WAPA PR Canal 4",
             "description": "WAPA",
@@ -28,11 +36,11 @@
             "streamformat":"hls"
         },
         {
-            "id": "TV-WIPR",
-            "title": "WIPR Canal 6",
-            "description": "Somos las emisoras del pueblo de Puerto Rico, sirviendo a nuestra gente a través de WIPR TV, WIPM, por radio a través de Allegro 91.3 FM, 940AM y la aplicación PRTV+.",
-            "thumbnail": "https://static.wikia.nocookie.net/logopedia/images/d/df/WIPR-TV_2015.svg/revision/latest/scale-to-width-down/1000",
-            "url":"http://hls-proxy.adiazriv.workers.dev/index.m3u8",
+            "id": "TV-TM2",
+            "title": "Telemundo Punto2",
+            "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
+            "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02gFnnixCUEfFjDnu4FSA_HO67uIV0Ue0daxTgt8IZowR4_xhDMZMXFHfj4sk7IRxcYKU7tPU5U2pqbLKpePmm6rtyO3d8zh9CIrWLadZ1149EyAM3sg7JJeGwMlI5rhLkYMKmNDftI8/s652/Punto+2+HD+-+Liberty.jpeg",
+            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
             "streamformat":"hls"
         },
         {
@@ -42,14 +50,6 @@
             "thumbnail": "https://theretrochannel.tv/img/retroplayer.jpg",
             "url": "https://5fd5567570c0e.streamlock.net/theretrochannel/stream/playlist.m3u8",
             "streamformat": "hls"
-        },
-        {
-            "id": "TV-TM2",
-            "title": "Telemundo Punto2",
-            "description": "Telemundo de Puerto Rico canal líder en telenovelas, noticias y entretenimiento.",
-            "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02gFnnixCUEfFjDnu4FSA_HO67uIV0Ue0daxTgt8IZowR4_xhDMZMXFHfj4sk7IRxcYKU7tPU5U2pqbLKpePmm6rtyO3d8zh9CIrWLadZ1149EyAM3sg7JJeGwMlI5rhLkYMKmNDftI8/s652/Punto+2+HD+-+Liberty.jpeg",
-            "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream2/master.m3u8",
-            "streamformat":"hls"
         },
         {
             "id": "TV-ATV-PR",
