@@ -10,15 +10,7 @@
             "thumbnail": "https://media.telemundopr.com/2022/09/Telemundo-PR-1-1.png",
             "url":"https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8",
             "streamformat":"hls"
-        },
-        {
-            "id": "TV-BA",
-            "title": "Baloncesto",
-            "description": "Baloncesto",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ByxTxZwTvw1-ToSqBGf0zp4zNth3WZPq4g&s",
-            "url":"https://pontos.phantemlis.top/premium1/index.m3u8?md5v1=ooZ2Z9xu_u8Wom2u3yo0cA&md5v2=rqHJBDx-MYHd59YFPv880Q&expires=1781403942",
-            "streamformat":"hls"
-        },        
+        },    
         {
             "id": "TV-TO",
             "title": "TeleOnce PR Canal 11",
